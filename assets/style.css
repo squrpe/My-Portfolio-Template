@@ -64,14 +64,12 @@ a:focus {
   color: var(--dark-beige);
 }
 
-
 /* Main Content Selector */
 #main-content {
   display: flex;
   flex-wrap: wrap;
   width: 100vw;
 }
-
 
 /* Aside/Contact Me Content Selector*/
 aside {
@@ -86,7 +84,6 @@ aside h2 {
   font-size: 1.5rem;
   padding-bottom: 15px;
 }
-
 
 input[type=text], select, textarea {
   width: 100%;
@@ -119,7 +116,6 @@ input[type=submit]:hover {
 }
 
 /* About me Content Selector */
-
 #about-me {
   flex:70%;
   display:flex;
@@ -147,7 +143,6 @@ input[type=submit]:hover {
   flex: 1;
   font-size: 1.2vw;
 }
-
 
 /* Work Content Selectors */
 #work h2{
