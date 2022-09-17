@@ -236,3 +236,5 @@ body {
 Lara Grocke - [@my_twitter](twitter.com) - [myemail@email.com](gmail.com)
 
 Project Link - https://github.com/squrpe/bootcamp-week2challenge
+
+Project Deployment - https://squrpe.github.io/bootcamp-week2challenge/
