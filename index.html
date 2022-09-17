@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>MyPortfolio</title>
+        <link rel="stylesheet" href="assets/reset.css">
+        <link rel="stylesheet" href="assets/style.css">
+    </head>
+
+    <body>
+         <!-- Heading Row -->
+        <header>
+            <h1>Lara Nicole</h1>
+        </header>
+
+        <!-- Nav Row -->
+        <nav>
+            <ul>
+                <li><a href="javascript:void(0)" onclick="document.querySelector('#about-me').scrollIntoView({behavior:'smooth'});window.location.hash = 'about-me'">About</a></li>
+                <li><a href="javascript:void(0)" onclick="document.querySelector('#work').scrollIntoView({behavior:'smooth'});window.location.hash = 'work'">Work</a></li>
+                <li><a href="javascript:void(0)" onclick="document.querySelector('#contact-me').scrollIntoView({behavior:'smooth'});window.location.hash = 'contact-me'">Contact</a></li>
+            </ul>
+        </nav>
+
+        <main>
+
+            <section id="main-content">
+                <!-- Aside Row -->
+                <aside id="contact-me">
+                    <h2>Contact Me</h2>
+                        <div class="container">
+                            <form action="/action_page.php">
+                                    <label for="fname">First Name</label>
+                                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                                    <label for="lname">Last Name</label>
+                                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                                    <label for="country">Country</label>
+                                    <select id="country" name="country">
+                                    <option value="australia">Australia</option>
+                                    <option value="usa">USA</option>
+                                    <option value="other">Other</option>
+                                    </select>
+
+                                    <label for="subject">Subject</label>
+                                    <textarea id="subject" name="subject" placeholder="Write something.." style="max-height:100vw"></textarea>
+
+                                    <input type="submit" value="Submit">
+                            </form>
+                        </div>
+                </aside>
+
+                <div>
+
+
+                </div>
+
+                <!-- About me Row -->
+                <div id="about-me">
+                    <img src="assets/laraimg.jpeg" alt="Picture of Lara Nicole" style="width:100%"/>
+                    <div id="text">
+                        <h2>About Me</h2>
+                        <p>I am currently undergoing a 24-week Full Stack Bootcamp course through The University of Adelaide.</p>
+                        <p>During this time, I will be completing a variety of projects. </p>
+                        <p>I am currently undergoing a 24-week Full Stack Bootcamp course through The University of Adelaide.</p>
+                        <p>During this time, I will be completing a variety of projects. </p>
+                        <p>I am currently undergoing a 24-week Full Stack Bootcamp course through The University of Adelaide.</p>
+                        <p>During this time, I will be completing a variety of projects. </p>
+                        <p>I am currently undergoing a 24-week Full Stack Bootcamp course through The University of Adelaide.</p>
+                        <p>During this time, I will be completing a variety of projects. </p>
+                        <p>I am currently undergoing a 24-week Full Stack Bootcamp course through The University of Adelaide.</p>
+                        <p>During this time, I will be completing a variety of projects. </p>
+                        <p>I am currently undergoing a 24-week Full Stack Bootcamp course through The University of Adelaide.</p>
+                        <p>During this time, I will be completing a variety of projects. </p>
+                        <p>I am currently undergoing a 24-week Full Stack Bootcamp course through The University of Adelaide.</p>
+                        <p>During this time, I will be completing a variety of projects. </p>
+                        <p>I am currently undergoing a 24-week Full Stack Bootcamp course through The University of Adelaide.</p>
+                        <p>During this time, I will be completing a variety of projects. </p>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- Work Section Rows -->
+            <div id="work">
+                <h2>My Projects</h2>
+                    <div>
+                        <a href="https://example.com/"><img src="assets/sunset.jpeg" alt="Picture of sunset" class="image" style="width:100%"/></a>
+                        <div class="text-overlay">Project Example</div>
+                    </div>
+            </div>
+
+            <section class="row">
+                
+                <div class="col">
+                    <a href="https://example.com/"><img src="assets/eye.jpeg" alt="Picture of eye" class="image" style="width:100%"/></a>
+                    <a href="https://example.com/"><img src="assets/rain.jpeg" alt="Picture of rain" class="image" style="width:100%"/></a>
+                    <a href="https://example.com/"><img src="assets/music.webp" alt="Picture of muscian" class="image" style="width:100%"/></a>
+                    <a href="https://example.com/"><img src="assets/flower.webp" alt="Picture of flower" class="image" style="width:100%"/></a>
+                </div>
+
+                <div class="col">
+                    <a href="https://example.com/"><img src="assets/flower.webp" alt="Picture of flower" class="image" style="width:100%"/></a>
+                    <a href="https://example.com/"><img src="assets/eye.jpeg" alt="Picture of eye" class="image" style="width:100%"/></a>
+                    <a href="https://example.com/"><img src="assets/rain.jpeg" alt="Picture of rain" class="image" style="width:100%"/></a>
+                    <a href="https://example.com/"><img src="assets/music.webp" alt="Picture of muscian" class="image" style="width:100%"/></a>
+                </div>
+
+                <div class="col">
+                    <a href="https://example.com/"><img src="assets/music.webp" alt="Picture of muscian" class="image" style="width:100%"/></a>
+                    <a href="https://example.com/"><img src="assets/flower.webp" alt="Picture of flower" class="image" style="width:100%"/></a>
+                    <a href="https://example.com/"><img src="assets/eye.jpeg" alt="Picture of eye" class="image" style="width:100%"/></a>
+                    <a href="https://example.com/"><img src="assets/rain.jpeg" alt="Picture of rain" class="image" style="width:100%"/></a>
+                </div>
+
+                <div class="col">
+                    <a href="https://example.com/"><img src="assets/eye.jpeg" alt="Picture of eye" class="image" style="width:100%"/></a>
+                    <a href="https://example.com/"><img src="assets/rain.jpeg" alt="Picture of rain" class="image" style="width:100%"/></a>
+                    <a href="https://example.com/"><img src="assets/music.webp" alt="Picture of muscian" class="image" style="width:100%"/></a>
+                    <a href="https://example.com/"><img src="assets/flower.webp" alt="Picture of flower" class="image" style="width:100%"/></a>
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+            
+        </footer>
+
+    </body>
+</html>
