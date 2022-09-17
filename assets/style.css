@@ -1,3 +1,4 @@
+/* Root elements */
 :root {
   --dark-green: #1C6758;
   --light-green: #3D8361;
@@ -11,7 +12,7 @@
   box-sizing: border-box;
 }
 
-/* Body Element Selector */
+/* Body & Main Element Selectors */
 body {
   background-color: var(--light-biege);
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -24,7 +25,6 @@ body {
 main {
   display: flex;
   flex-wrap: wrap;
-  flex-grow: 1;
 }
 
 /* Heading & Nav Content Selectors */
@@ -40,15 +40,19 @@ header h1 {
   margin-bottom: 10px;
 }
 
-
 nav {
-  overflow: hidden;
+  display: flex;
   background-color: var(--light-green);
 }
 
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
 nav a {
+  display: inline-block;
   color: var(--light-biege);
-  float: left;
   padding: 14px 20px;
   text-decoration: none;
   text-align: center;
@@ -121,6 +125,7 @@ input[type=submit]:hover {
   display:flex;
   align-items: flex-start;
   padding: 25px 25px 25px 25px;
+
 }
 
 #about-me img {
@@ -140,7 +145,7 @@ input[type=submit]:hover {
 
 #text {
   flex: 1;
-  font-size: 17px;
+  font-size: 1.2vw;
 }
 
 
@@ -172,7 +177,6 @@ input[type=submit]:hover {
 
 .image {
   margin: 8px 0px 8px 0px;
-  vertical-align: center;
 
   opacity: 1;
   display: block;
@@ -186,6 +190,21 @@ input[type=submit]:hover {
   opacity: 0.3;
 }
 
+.image-overlay-container {
+  position: relative;
+  text-align: center;
+  color: var(--light-biege);
+}
+
+.image-text {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  background-color: var(--dark-green);
+  padding: 8px;
+  font-size: 1.5rem;
+}
+
 /* Footer Content Selectors */
 footer {
   padding: 35px;
@@ -193,12 +212,17 @@ footer {
   display: center;
 }
 
-
-
-
 /* Responsive Design CSS*/
+@media screen and (max-width: 767px) {
 
-@media (min-width: 481px) and (max-width: 767px) {
+  nav {
+    justify-content: center;
+  }
+
+  nav ul{
+    flex-direction: column;
+    align-items: center;
+  }
 
   .col {
     flex: 100%;
@@ -212,33 +236,51 @@ footer {
   }
 
   #about-me {
-    flex-shrink: 1;
+    flex: auto;
     flex-direction: column;
-    flex-flow: column wrap;
   }
 
   #about-me img{
     flex: auto;
   }
+
+  #about-me h2 {
+    padding-top: 15px;
+    text-align: center;
+  }
+
+  #text {
+    flex:auto;
+    font-size: 3vw;
+  }
+
 }
 
 
 @media (min-width: 768px) and (max-width: 1024px){
+
+  nav {
+    justify-content: center;
+  }
+
+  nav ul{
+    flex-direction: column;
+    align-items: center;
+  }
 
   .col {
     flex: 50%;
     max-width: 50%;
   }
 
-  #main-content {
-    flex-shrink: 1;
-    flex-direction: column;
-    flex-flow: column wrap;
-  }
-
   #about-me {
     flex: auto;
   }
+
+  #text {
+    font-size: 1.7vw;
+  }
+  
 }
 
 
@@ -250,7 +292,7 @@ footer {
   }
 
   #text {
-    
+    font-size: 1.15vw;
   }
 
 }
